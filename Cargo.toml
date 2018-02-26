@@ -1,0 +1,6 @@
+[package]
+name = "bravais"
+version = "0.1.0"
+authors = ["Simon Heath <icefoxen@gmail.com>"]
+
+[dependencies]
