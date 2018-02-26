@@ -49,3 +49,19 @@ of shapes, sizes and arities.
 # References
 
 https://docs.scipy.org/doc/numpy/reference/
+
+# Related crates to look closer at!
+
+Data structures
+
+ * https://github.com/bluss/rust-ndarray
+
+Algorithms
+
+ * https://github.com/indigits/scirust
+ * https://crates.io/crates/rustml
+
+Plotting
+
+ * https://crates.io/crates/dataplotlib
+ * https://github.com/japaric/criterion.rs has a plotting library
