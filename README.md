@@ -19,6 +19,7 @@ of shapes, sizes and arities.
   * bignums?  Ponder it.  Look at the options.
   * Ideally should be easy to interface with C code, perhaps bridges with R and Python, gluon?  This implies also not going
     balls-out with generics.
+  * Probably going to be trait-object-y as all hell?
  * A slice or view of such an array
   * Can vary shape, size, etc. of the underlying data
   * Probably borrowed, maybe can be Rc'ed or Cow
@@ -29,9 +30,22 @@ of shapes, sizes and arities.
   * It should be possible to tag arrays with metadata, or extract the underlying info to strip the metadata
   * Row/column names, types, relations/invariants,
   * Really I want to be able to just tell the system what TYPE of transformation I want on my data and have it do it
+  * One of my constant frustrations with numpy is it's often very hard to slice things *just right* to communicate some
+    little semantic details of your data...
  * Algorithms
   * There'll be shittons of these and they should be fairly easy to add on more; compare basic numpy vs. scipy
   * Very basic and fundamental stuff like addition, subtraction, comparison, filtering, basic statistics should always be there
  * Data reading/writing
   * Definitely: CSV, image, sqlite
   * Maybe: HDF5, geotiff, what else?  Geospatial types?
+
+# Related problems
+
+ * Graphing!  lyon gives nice drawing primitives.
+ * Statistics, algorithms, etc.  Equivalent to scipy.  Someone else's problem.
+ * Data structures that don't fit into memory.  Would be nice to allow someone else's crate to present a uniform interface
+   using this.
+
+# References
+
+https://docs.scipy.org/doc/numpy/reference/
